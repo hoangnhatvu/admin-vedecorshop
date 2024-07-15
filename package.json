@@ -1,0 +1,44 @@
+{
+  "name": "windmill-dashboard-nextjs-typescript",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.0.1",
+    "@types/react-dom": "^18.2.18",
+    "axios": "^0.25.0",
+    "chart.js": "^3.7.0",
+    "classnames": "^2.3.1",
+    "css-loader": "^6.8.1",
+    "next": "^12.0.8",
+    "postcss-loader": "^7.3.3",
+    "react": "17.0.2",
+    "react-chartjs-2": "^4.1.0",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.49.2",
+    "react-redux": "^7.2.7",
+    "react-select": "^5.8.0",
+    "react-tag-input-component": "^2.0.2",
+    "react-toastify": "^9.1.3",
+    "redux-persist": "^6.0.0",
+    "webpack": "^5.89.0"
+  },
+  "devDependencies": {
+    "@roketid/windmill-react-ui": "^0.1.1",
+    "@svgr/webpack": "^6.1.0",
+    "@types/node": "20.10.5",
+    "@types/react": "17.0.21",
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^5.0.12",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.5.2"
+  }
+}
