@@ -19,7 +19,7 @@ const sendNotification = async (
   title: string,
   image: string
 ) => {
-  const endpoint = "https://fcm.googleapis.com/fcm/send";
+  const endpoint = process.env.FIREBASE_URL || "";
   const body = {
     to: clientToken,
     notification: {
@@ -27,7 +27,7 @@ const sendNotification = async (
       title: title,
       image: image,
     },
-    data: {navigationId: "orders"}
+    data: { navigationId: "orders" },
   };
 
   console.log(body);
@@ -35,7 +35,7 @@ const sendNotification = async (
   const response = await axios.post(endpoint, body, {
     headers: {
       "Content-Type": "application/json",
-      Authorization: `key=AAAAdUpDSkQ:APA91bHkZHik6MAtRvMpLlpuFpdEIAeI_Xnm3YKAFqdpVke0npDkDJ4JErErqjhUz4myjiu2k7OUgE_hMzOBRK48hpjaEIo6f7x1suxxvPI3iB9R3VyUv8kadCK2c9fV9U6E1qMW31Vx`,
+      Authorization: process?.env?.FIREBASE_KEY || "",
     },
   });
   return response;
