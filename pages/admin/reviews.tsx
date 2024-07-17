@@ -48,10 +48,7 @@ function Review() {
     loadData();
   }, []);
 
-  const handleUpdateReview = async (
-    updatedToken: string,
-    reviewid: string
-  ) => {
+  const handleUpdateReview = async (updatedToken: string, reviewid: string) => {
     try {
       setIsLoading(true);
       const data = {
@@ -117,10 +114,7 @@ function Review() {
                         <div className="flex items-center text-sm">
                           <Avatar
                             className="hidden mr-3 md:block"
-                            src={
-                              process.env.APP_API_URL +
-                              review.product.product_image
-                            }
+                            src={review.product.product_image}
                             alt="Product image"
                           />
                           <div>
@@ -128,7 +122,8 @@ function Review() {
                               {review.product.product_name}
                             </p>
                             <p className="text-xs text-gray-600 dark:text-gray-400">
-                              Đánh giá bởi <strong>{review.created_by.email}</strong>
+                              Đánh giá bởi{" "}
+                              <strong>{review.created_by.email}</strong>
                             </p>
                           </div>
                         </div>

@@ -131,7 +131,7 @@ function Account() {
                         <div className="flex items-center text-sm">
                           <Avatar
                             className="hidden mr-3 md:block"
-                            src={process.env.APP_API_URL + user.user_image}
+                            src={user.user_image}
                             alt="User avatar"
                           />
                           <div>

@@ -87,7 +87,11 @@ function Order() {
     }
   };
 
-  const handleCancelOrder = async (updatedToken: string, orderid: string, deviceToken: string) => {
+  const handleCancelOrder = async (
+    updatedToken: string,
+    orderid: string,
+    deviceToken: string
+  ) => {
     const userConfirmed = window.confirm(
       "Bạn có chắc muốn hủy đơn hàng này không?"
     );
@@ -253,10 +257,7 @@ function Order() {
                         <div className="flex items-center text-sm">
                           <Avatar
                             className="hidden mr-3 md:block"
-                            src={
-                              process.env.APP_API_URL +
-                              order.created_by.user_image
-                            }
+                            src={order.created_by.user_image}
                             alt="User image"
                           />
                           <div>
@@ -314,7 +315,7 @@ function Order() {
                                 size="small"
                                 aria-label="Cancel"
                                 onClick={() => {
-                                  handleCancelOrder(                                    
+                                  handleCancelOrder(
                                     order.updated_token,
                                     order.id,
                                     order.created_by.device_token

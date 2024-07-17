@@ -116,7 +116,7 @@ function Header() {
               >
                 <Avatar
                   className="align-middle"
-                  src={process.env.APP_API_URL + (user ? user.user_image : "")}
+                  src={user?.user_image || ""}
                   alt=""
                   aria-hidden="true"
                 />
