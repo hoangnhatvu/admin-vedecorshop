@@ -129,7 +129,7 @@ function Template() {
         <div className="flex flex-1">
           <div className="relative w-full max-w-sm mr-2 focus-within:text-purple-500">
             <div className="absolute inset-y-0 flex items-center pl-2">
-              <SearchIcon className="w-4 h-4" aria-hidden="true" />
+              <SearchIcon className="w-4 h-4 text-white" aria-hidden="true" />
             </div>
             <Controller
               name="searchText"
@@ -268,10 +268,10 @@ function Template() {
                     <TableCell>
                       <div className="flex items-center space-x-4">
                         <Button layout="link" size="small" aria-label="Edit">
-                          <EditIcon className="w-5 h-5" aria-hidden="true" />
+                          <EditIcon className="w-5 h-5 text-white" aria-hidden="true" />
                         </Button>
                         <Button layout="link" size="small" aria-label="Delete">
-                          <TrashIcon className="w-5 h-5" aria-hidden="true" />
+                          <TrashIcon className="w-5 h-5 text-white" aria-hidden="true" />
                         </Button>
                       </div>
                     </TableCell>

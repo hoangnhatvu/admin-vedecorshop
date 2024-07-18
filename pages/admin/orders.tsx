@@ -187,7 +187,7 @@ function Order() {
         <div className="flex flex-1">
           <div className="relative w-full max-w-sm mr-2 focus-within:text-purple-500">
             <div className="absolute inset-y-0 flex items-center pl-2">
-              <SearchIcon className="w-4 h-4" aria-hidden="true" />
+              <SearchIcon className="w-4 h-4 text-white" aria-hidden="true" />
             </div>
             <Input
               className="pl-8 text-gray-700"
@@ -288,7 +288,7 @@ function Order() {
                       <TableCell>
                         <div className="flex items-center space-x-4">
                           <Button layout="link" size="small" aria-label="View">
-                            <EyeIcon className="w-5 h-5" aria-hidden="true" />
+                            <EyeIcon className="w-5 h-5 text-white" aria-hidden="true" />
                           </Button>
                           {order.status === "Chờ xác nhận" ? (
                             <>
@@ -306,7 +306,7 @@ function Order() {
                                 }}
                               >
                                 <TickIcon
-                                  className="w-5 h-5"
+                                  className="w-5 h-5 text-white"
                                   aria-hidden="true"
                                 />
                               </Button>
@@ -323,7 +323,7 @@ function Order() {
                                 }}
                               >
                                 <CancelIcon
-                                  className="w-5 h-5"
+                                  className="w-5 h-5 text-white"
                                   aria-hidden="true"
                                 />
                               </Button>
@@ -346,7 +346,7 @@ function Order() {
                                     }}
                                   >
                                     <TruckIcon
-                                      className="w-5 h-5"
+                                      className="w-5 h-5 text-white"
                                       aria-hidden="true"
                                     />
                                   </Button>
@@ -363,7 +363,7 @@ function Order() {
                                     }}
                                   >
                                     <CancelIcon
-                                      className="w-5 h-5"
+                                      className="w-5 h-5 text-white"
                                       aria-hidden="true"
                                     />
                                   </Button>

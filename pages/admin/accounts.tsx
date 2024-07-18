@@ -97,7 +97,7 @@ function Account() {
       <div className="flex justify-start flex-1 mb-4 lg:mr-32">
         <div className="relative w-full max-w-sm mr-2 focus-within:text-purple-500">
           <div className="absolute inset-y-0 flex items-center pl-2">
-            <SearchIcon className="w-4 h-4" aria-hidden="true" />
+            <SearchIcon className="w-4 h-4 text-white" aria-hidden="true" />
           </div>
           <Input
             className="pl-8 text-gray-700"
@@ -178,7 +178,7 @@ function Account() {
                               setCurrentUser(user);
                             }}
                           >
-                            <EditIcon className="w-5 h-5" aria-hidden="true" />
+                            <EditIcon className="w-5 h-5 text-white" aria-hidden="true" />
                           </Button>
                           {user.is_blocked ? (
                             <Button
@@ -187,7 +187,7 @@ function Account() {
                               aria-label="Unlock"
                             >
                               <UnlockIcon
-                                className="w-5 h-5"
+                                className="w-5 h-5 text-white"
                                 aria-hidden="true"
                               />
                             </Button>
@@ -198,7 +198,7 @@ function Account() {
                               aria-label="Lock"
                             >
                               <LockIcon
-                                className="w-5 h-5"
+                                className="w-5 h-5 text-white"
                                 aria-hidden="true"
                               />
                             </Button>
